@@ -31,3 +31,17 @@ Este archivo registra discrepancias, cambios de versión o ambigüedades detecta
 **Decisión:** todo el repositorio y la preparación previa a CCAR-P se basan exclusivamente en **Claude Certified Architect – Foundations** salvo que se indique expresamente lo contrario.
 
 **Impacto:** al buscar cursos, guías o mocks se debe verificar el nombre completo de la certificación y su blueprint; `Foundations` por sí solo no identifica el examen correcto.
+
+### 2026-08-30 — Lista actual de cursos recomendados para CCAR-F
+
+**Hallazgo:** la página oficial actual de CCAR-F enumera como preparación recomendada: `AI Fluency: Framework & Foundations`, `Claude 101`, `Building with the Claude API`, `Claude with Amazon Bedrock`, `Claude on Google Cloud`, `Introduction to Model Context Protocol` y `Claude Code in Action`.
+
+`AI Capabilities and Limitations` no aparece actualmente en esa lista específica de CCAR-F, aunque sí aparece como prerequisito recomendado en otras rutas oficiales, entre ellas CCAR-P.
+
+**Decisión:**
+
+- Actualizar `ROADMAP.md` con la lista publicada específicamente para CCAR-F.
+- Mantener `AI Capabilities and Limitations` disponible como material complementario oficial cuando sume a un tema, sin etiquetarlo falsamente como requisito o curso recomendado específico de CCAR-F.
+- Evaluar los cursos de Bedrock y Google Cloud por relevancia cuando lleguemos a selección de plataforma/deployment, en lugar de omitirlos automáticamente.
+
+**Impacto:** la ruta conserva todo material útil sin confundir una recomendación oficial específica con una decisión pedagógica propia del proyecto.

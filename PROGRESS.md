@@ -4,13 +4,13 @@
 
 **Ruta actual:** CCAR-F  
 **Metodología:** un tema a la vez  
-**Estado:** preparación inicial
+**Estado:** estudio activo
 
 ## Checklist global
 
 ### Base recomendada
 
-- [ ] AI Fluency: Framework & Foundations — `PENDIENTE`
+- [ ] AI Fluency: Framework & Foundations — `EN ESTUDIO`
 - [ ] Claude 101 — `PENDIENTE`
 - [ ] Building with the Claude API — `PENDIENTE`
 - [ ] Introduction to Model Context Protocol (MCP) — `PENDIENTE`
@@ -36,6 +36,10 @@
 ## Tema actual
 
 **AI Fluency: Framework & Foundations**  
-Estado: `PENDIENTE`
+Estado: `EN ESTUDIO`
+
+### Próximo paso del estudiante
+
+Completar el curso oficial `AI Fluency: Framework & Foundations` de Anthropic antes de realizar la práctica y las preguntas de cierre del tema.
 
 No se comienza el siguiente tema hasta que éste cumpla el criterio definido en `STUDY_PROTOCOL.md`.

@@ -4,17 +4,22 @@ Este documento define cómo se trabaja cada tema de CCAR-F y, posteriormente, de
 
 ## Principio general
 
-Se estudia **un tema a la vez**. No se desarrolla el tema siguiente hasta que el actual cumpla el criterio de finalización.
+Se estudia **un tema a la vez**. No se desarrolla el siguiente bloque hasta que el actual tenga el nivel de comprensión y experiencia suficiente según su naturaleza.
 
-## Jerarquía de fuentes
+> No avanzamos simplemente porque terminó un video. Avanzamos cuando el estudiante y ChatGPT consideran que existe comprensión suficiente para el siguiente bloque.
+
+## Jerarquía de fuentes — `Official-first`
 
 1. **Exam Guide / blueprint oficial de Anthropic** — define qué puede ser evaluado.
-2. **Documentación oficial de Anthropic** — fuente técnica principal.
-3. **Cursos oficiales de Anthropic** — explicación y práctica guiada.
-4. **Fuentes externas de alta calidad** — cursos, repositorios, artículos, labs o videos que agreguen profundidad o una explicación mejor.
-5. **Mocks / preguntas comunitarias** — práctica; nunca fuente de verdad por sí sola.
+2. **Anthropic Academy** — ruta de preparación oficial.
+3. **Documentación oficial de Anthropic** — fuente técnica principal para profundizar.
+4. **Hands-on labs** — cuando el tema requiere experiencia práctica.
+5. **Fuentes externas de alta calidad** — sólo cuando cubren un gap concreto o explican algo significativamente mejor.
+6. **Mocks / preguntas** — práctica y detección de gaps; nunca fuente de verdad por sí sola.
 
 Si dos fuentes discrepan, se registra en `DIVERGENCES.md` y se prioriza la fuente oficial más reciente y específica.
+
+No se adopta un curso externo integral como backbone de la preparación por defecto.
 
 ## Idioma y terminología
 
@@ -30,7 +35,77 @@ Ejemplos:
 
 No se traducen nombres propios de productos, APIs, archivos, comandos o parámetros.
 
-## Flujo obligatorio por tema
+---
+
+## Tipos de bloque de estudio
+
+No todos los cursos preparatorios requieren el mismo nivel de práctica ni la misma batería de preguntas.
+
+### A. Cursos de orientación / fundamentos
+
+Ejemplo:
+
+- **AI Fluency: Framework & Foundations**
+
+Pueden cerrarse con:
+
+1. completar el curso oficial;
+2. elaborar un resumen fiel;
+3. conservar los conceptos relevantes;
+4. hacer una pequeña comprobación conceptual;
+5. documentar su relación real con CCAR-F;
+6. consolidar en GitHub.
+
+No se crea un laboratorio técnico artificial sólo para cumplir una plantilla.
+
+### B. Cursos técnicos
+
+Ejemplos:
+
+- **Building with the Claude API**;
+- **Claude with Amazon Bedrock**;
+- **Claude on Google Cloud**;
+- **Introduction to Model Context Protocol**;
+- **Claude Code in Action**.
+
+Cuando el contenido necesita experiencia práctica, el flujo recomendado es:
+
+```text
+Curso oficial
+→ complementar con documentación
+→ uno o varios labs
+→ preguntas
+→ detectar gaps
+→ corregir
+→ consolidar en GitHub
+→ avanzar
+```
+
+La cantidad y dificultad de labs y preguntas debe ser proporcional a la relevancia técnica del tema.
+
+### C. Task Statements / dominios reales del examen
+
+Estos bloques **sí requieren cobertura exhaustiva**.
+
+Para cada task statement se debe cubrir, cuando aplique:
+
+- teoría;
+- documentación oficial;
+- complementos cuando realmente sumen;
+- práctica hands-on;
+- escenarios;
+- preguntas tipo examen;
+- explicación de distractores;
+- revisión de errores;
+- trade-offs;
+- relación con otros task statements;
+- consolidación en GitHub.
+
+El objetivo es poder **decidir, implementar, reconocer y justificar** la opción correcta en escenarios realistas, no sólo repetir definiciones.
+
+---
+
+## Flujo detallado para bloques técnicos y task statements
 
 ### 1. Objetivo de examen
 
@@ -46,7 +121,7 @@ No se traducen nombres propios de productos, APIs, archivos, comandos o parámet
 
 ### 3. Complemento
 
-Agregar al menos una fuente adicional cuando aporte valor real, por ejemplo:
+Agregar una fuente adicional **sólo cuando aporte valor real**, por ejemplo:
 
 - explicación más intuitiva;
 - comparación arquitectónica;
@@ -72,20 +147,19 @@ Generar material propio en español con terminología clave en inglés:
 
 ### 5. Práctica
 
-Cada tema debe tener una actividad práctica proporcional a su importancia:
+Cuando el tema la necesita, la práctica puede incluir:
 
 - ejercicio conceptual;
 - modificación de prompts/configuración;
 - implementación de código;
 - laboratorio;
 - debugging;
-- decisión arquitectónica.
+- decisión arquitectónica;
+- comparación entre alternativas.
 
-El estudiante debe realizarla antes de cerrar el tema.
+### 6. Preguntas
 
-### 6. Preguntas tipo examen
-
-Debe existir una batería de preguntas situacionales con:
+Para task statements y temas técnicos relevantes debe existir una batería de preguntas situacionales con:
 
 - opciones plausibles;
 - respuesta correcta;
@@ -97,18 +171,30 @@ El objetivo no es memorizar respuestas sino aprender a razonar los trade-offs.
 
 ### 7. Cierre
 
-Antes de avanzar:
+El checklist se adapta al tipo de bloque.
+
+#### Curso de fundamentos
+
+- [ ] Curso oficial completado.
+- [ ] Conceptos principales comprendidos.
+- [ ] Relación con CCAR-F documentada.
+- [ ] Comprobación corta realizada.
+- [ ] Material consolidado en GitHub.
+- [ ] `PROGRESS.md` actualizado.
+
+#### Curso técnico / task statement
 
 - [ ] Material oficial revisado.
-- [ ] Fuente complementaria útil revisada.
+- [ ] Documentación técnica relevante revisada.
+- [ ] Complemento útil revisado si existe un gap real.
 - [ ] Conceptos comprendidos y documentados.
-- [ ] Práctica realizada.
-- [ ] Preguntas tipo examen respondidas y revisadas.
+- [ ] Práctica realizada cuando corresponde.
+- [ ] Preguntas respondidas y revisadas.
 - [ ] Errores o dudas aclarados.
 - [ ] Material consolidado en GitHub.
 - [ ] `PROGRESS.md` actualizado.
 
-Sólo entonces el tema pasa a **COMPLETO**.
+Sólo entonces el bloque pasa a **COMPLETO**.
 
 ## Estados
 

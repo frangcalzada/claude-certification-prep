@@ -1,30 +1,32 @@
 # Roadmap CCAR-F
 
-Este roadmap separa claramente **recursos de preparación** de **dominios evaluados en el examen**.
+Este roadmap separa explícitamente **recursos de preparación** de **dominios evaluados en el examen**. La ruta pedagógica y el Exam Blueprint se complementan, pero no son lo mismo.
 
-## Etapa A — Preparación oficial recomendada por Anthropic
+## A. Official preparation path
 
-La página oficial de CCAR-F indica que los siguientes cursos gratuitos de Anthropic Academy cubren los dominios del examen y que la mayoría de los candidatos los completa antes de registrarse.
+La página oficial específica de **Claude Certified Architect – Foundations (CCAR-F)** indica actualmente que los siguientes cursos gratuitos de Anthropic Academy cubren los dominios del examen y que la mayoría de candidatos los completa en este orden:
 
-1. **AI Fluency: Framework & Foundations** — Level 100
-2. **Claude 101** — Level 100
-3. **Building with the Claude API** — Level 100–200
-4. **Claude with Amazon Bedrock** — Level 100–200
-5. **Claude on Google Cloud** — Level 100–200
-6. **Introduction to Model Context Protocol** — Level 200
-7. **Claude Code in Action** — Level 200
+1. **AI Fluency: Framework & Foundations** — Level 100 — `COMPLETO`
+2. **Claude 101** — Level 100 — `EN ESTUDIO`
+3. **Building with the Claude API** — Level 100–200 — `PENDIENTE`
+4. **Claude with Amazon Bedrock** — Level 100–200 — `PENDIENTE`
+5. **Claude on Google Cloud** — Level 100–200 — `PENDIENTE`
+6. **Introduction to Model Context Protocol** — Level 200 — `PENDIENTE`
+7. **Claude Code in Action** — Level 200 — `PENDIENTE`
 
 Estos cursos **no sustituyen los task statements oficiales** y tampoco son prerequisitos formales para rendir el examen.
 
 ### Regla del proyecto
 
-- Los cursos introductorios como **AI Fluency** y **Claude 101** se estudiarán cuando aporten fundamentos necesarios, aunque no sean task statements del blueprint.
-- **Building with the Claude API**, **Introduction to MCP** y **Claude Code in Action** se consideran especialmente relevantes para construir la base técnica.
-- Los cursos específicos de plataforma (**Amazon Bedrock** y **Google Cloud**) se evaluarán cuando lleguemos a selección de plataforma / deployment. Se estudiarán las partes relevantes para CCAR-F y se decidirá entonces si conviene completarlos íntegramente.
-- **AI Capabilities and Limitations** puede utilizarse como complemento oficial si aporta a un tema, pero a fecha 2026-08-30 no figura en la lista de cursos recomendados publicada específicamente para CCAR-F; sí aparece como prerequisito recomendado en otras rutas como CCAR-P.
-- Cuando un curso incluya contenido ajeno al examen se marcará como **complementario**, no como requisito artificial.
+La página oficial específica de CCAR-F define el **path base** de preparación.
 
-## Etapa B — Blueprint CCAR-F
+Cursos más nuevos asociados a otras certificaciones —por ejemplo `Claude Certified Developer – Foundations`, `Claude Certified Associate – Foundations` o `Claude Certified Architect – Professional`— no se agregan automáticamente a este recorrido.
+
+Un recurso oficial adicional puede incorporarse como **complemento** cuando cubra un gap concreto.
+
+---
+
+## B. CCAR-F Exam Blueprint
 
 ### Domain 1 — Agentic Architecture & Orchestration — 27%
 
@@ -81,21 +83,56 @@ Task statements:
 5. Human Review & Confidence Calibration
 6. Information Provenance & Multi-Source Synthesis
 
-## Etapa C — Consolidación CCAR-F
+---
 
-Una vez completados todos los task statements:
+## C. Ruta pedagógica completa
+
+Nuestro recorrido no termina al completar videos o cursos.
+
+```text
+Official courses
+→ labs cuando corresponda
+→ cobertura exhaustiva de los task statements
+→ dominio por dominio
+→ mocks
+→ examen
+```
+
+### Estrategia `Official-first`
+
+Por defecto utilizamos esta prioridad:
+
+1. **Exam Guide / blueprint oficial**.
+2. **Anthropic Academy**.
+3. **Documentación oficial de Anthropic**.
+4. **Hands-on labs** cuando el tema necesite experiencia práctica.
+5. **Fuente externa** sólo cuando cubra un gap concreto o explique algo significativamente mejor.
+6. **Preguntas y mocks** para practicar razonamiento y detectar debilidades.
+
+No vamos a comprar ni seguir un curso externo completo como backbone de la preparación por defecto.
+
+En particular, actualmente **no se recomienda el curso general de Udemy de Vasco Patrício como eje de la preparación**. Si más adelante aparece un gap específico —por ejemplo MCP, Agent SDK, RAG, evals o Claude Code— investigaremos el mejor recurso puntual para ese problema.
+
+---
+
+## D. Consolidación CCAR-F
+
+Una vez completados los task statements de los cinco dominios:
 
 1. revisión cruzada de dominios;
 2. preguntas mixtas;
-3. mocks completos;
-4. error log;
-5. refuerzo dirigido;
-6. simulación final en condiciones de examen.
+3. mocks por dominio;
+4. mocks completos;
+5. error log;
+6. refuerzo dirigido;
+7. simulación final en condiciones de examen.
 
-## Etapa D — CCAR-P
+---
 
-Sólo después de completar CCAR-F se creará el roadmap detallado de CCAR-P con el mismo protocolo.
+## E. CCAR-P
+
+Sólo después de completar CCAR-F se creará y ejecutará el roadmap detallado de **Claude Certified Architect – Professional (CCAR-P)** con la misma filosofía de trabajo.
 
 ## Nota de mantenimiento
 
-Los porcentajes, cursos recomendados y task statements deben revisarse contra la versión vigente del Exam Guide y la Certification Page antes de cerrar cada dominio. Cualquier cambio se registra en `DIVERGENCES.md`.
+Los porcentajes, cursos recomendados y task statements deben revisarse contra la versión vigente del Exam Guide y la Certification Page antes de cerrar cada dominio. Cualquier cambio o diferencia relevante se registra en `DIVERGENCES.md`.

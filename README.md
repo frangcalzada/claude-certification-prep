@@ -4,16 +4,20 @@ Guía de estudio en español para preparar **Claude Certified Architect – Foun
 
 ## Objetivo
 
-El objetivo principal es adquirir los conocimientos y la práctica necesarios para rendir CCAR-F con criterio de examen real y, una vez completado, repetir la misma metodología para CCAR-P.
+Este repositorio tiene dos objetivos:
 
-El repositorio también busca convertirse en una ruta de preparación reutilizable para futuras personas que quieran certificarse.
+1. prepararme seriamente para aprobar primero **CCAR-F** y luego **CCAR-P**;
+2. construir en paralelo una guía/“escuelita” reutilizable para otras personas que quieran hacer la misma certificación.
+
+La preparación no se limita a completar cursos: combina blueprint oficial, documentación, práctica, preguntas, revisión de errores y consolidación progresiva.
 
 ## Idioma
 
 - Las explicaciones, ejercicios y notas se escriben en **español**.
 - Los conceptos, nombres de productos, parámetros, archivos, comandos y términos relevantes se conservan también en su **idioma original (English)**.
 - En la primera aparición de un concepto importante se prioriza el término original; por ejemplo: **context window (ventana de contexto)**, **tool use (uso de herramientas)**, **agentic loop (bucle agéntico)**.
-- El objetivo es aprender los términos tal como aparecerán en el examen, que actualmente se rinde en inglés.
+- No se traducen nombres propios de productos, APIs, archivos, parámetros o comandos.
+- El objetivo es aprender los términos tal como aparecerán en el examen, que actualmente se rinde en English.
 
 ---
 
@@ -21,7 +25,7 @@ El repositorio también busca convertirse en una ruta de preparación reutilizab
 
 ## Datos oficiales del examen
 
-> Datos verificados contra la página oficial de Anthropic Academy y el Exam Guide v1.0, efectivo desde julio de 2026. El programa puede cambiar, por lo que se revisará nuevamente antes de registrar el examen.
+> Datos revisados contra la página oficial de Anthropic Academy y el Exam Guide vigente al 2026-09-06. El programa puede cambiar, por lo que se revisará nuevamente antes de registrar el examen.
 
 | Dato | Valor |
 |---|---|
@@ -41,26 +45,26 @@ El repositorio también busca convertirse en una ruta de preparación reutilizab
 
 ### Importante sobre el passing score
 
-El resultado utiliza un **scaled score**. Por lo tanto:
+El resultado utiliza un **scaled score**.
 
 **720/1000 NO debe interpretarse automáticamente como “72% de respuestas correctas”.**
 
-Anthropic establece un puntaje escalado de 720 como corte de aprobación. El score report informa además el porcentaje de respuestas correctas por dominio.
+Anthropic establece un puntaje escalado de 720 como corte de aprobación. El score report informa además desempeño por dominio.
 
 ## Qué valida CCAR-F
 
-La certificación valida que una persona pueda tomar decisiones informadas sobre **trade-offs** al implementar soluciones reales con Claude, utilizando principalmente:
+La certificación valida la capacidad de tomar decisiones informadas sobre **trade-offs** al implementar soluciones reales con Claude, utilizando principalmente conceptos y herramientas asociadas a:
 
 - **Claude API**;
 - **Claude Agent SDK**;
 - **Claude Code**;
 - **Model Context Protocol (MCP)**.
 
-El examen no busca solamente conocimiento conceptual. Las preguntas están contextualizadas en escenarios realistas y requieren tomar decisiones sobre arquitectura, configuración, confiabilidad y trade-offs de producción.
+El examen no busca solamente conocimiento conceptual. Las preguntas están contextualizadas en escenarios y requieren decisiones sobre arquitectura, configuración, confiabilidad y trade-offs de producción.
 
 ---
 
-# Exam Blueprint
+# CCAR-F Exam Blueprint
 
 | Domain | Peso |
 |---|---:|
@@ -71,99 +75,114 @@ El examen no busca solamente conocimiento conceptual. Las preguntas están conte
 | **5. Context Management & Reliability** | **15%** |
 | **Total** | **100%** |
 
-## Temario / Task Statements
-
-El blueprint actual contiene **30 task statements**. Los nombres en inglés se mantienen porque son los términos que debemos reconocer para el examen.
+## Resumen del temario
 
 ### Domain 1 — Agentic Architecture & Orchestration — 27%
 
-1. **Agentic Loops** — diseño e implementación del ciclo de ejecución de un agente.
-2. **Multi-Agent Orchestration** — coordinación de múltiples agentes especializados.
-3. **Subagent Invocation and Context Passing** — invocación de subagentes y transferencia explícita de contexto.
-4. **Workflow Enforcement and Handoff** — control determinístico de workflows y handoffs.
-5. **Agent SDK Hooks** — uso de hooks para controlar o extender el comportamiento de agentes.
-6. **Task Decomposition Strategies** — descomposición de tareas complejas.
-7. **Session State and Resumption** — persistencia, recuperación y continuación de sesiones.
+Incluye `agentic loops`, multi-agent orchestration, subagents, handoffs, Agent SDK hooks, task decomposition y session state/resumption.
 
 ### Domain 2 — Tool Design & MCP Integration — 18%
 
-1. **Tool Interface Design** — diseño de interfaces y descripciones de tools.
-2. **Structured Error Responses** — errores estructurados que permitan recuperación y razonamiento.
-3. **Tool Distribution & Tool Choice** — distribución de herramientas y control de selección/invocación.
-4. **MCP Server Integration** — integración y configuración de MCP servers/clients.
-5. **Built-in Tools** — selección y utilización correcta de herramientas integradas.
+Incluye tool interface design, structured errors, tool choice/distribution, MCP server integration y built-in tools.
 
 ### Domain 3 — Claude Code Configuration & Workflows — 20%
 
-1. **CLAUDE.md Hierarchy, Scoping, and Modular Organisation** — jerarquía, alcance y organización del contexto persistente.
-2. **Custom Slash Commands and Skills** — creación y uso de comandos y skills reutilizables.
-3. **Path-Specific Rules for Conditional Convention Loading** — reglas específicas por path y carga condicional de convenciones.
-4. **Plan Mode vs Direct Execution** — cuándo planificar antes de ejecutar y cuándo actuar directamente.
-5. **Iterative Refinement Techniques** — desarrollo iterativo y refinamiento mediante feedback.
-6. **CI/CD Integration** — integración segura y reproducible de Claude Code en pipelines.
+Incluye `CLAUDE.md`, skills/custom commands, path-specific rules, Plan Mode, iterative refinement y CI/CD integration.
 
 ### Domain 4 — Prompt Engineering & Structured Output — 20%
 
-1. **System Prompts with Explicit Criteria** — instrucciones y criterios explícitos en system prompts.
-2. **Few-Shot Prompting** — uso de ejemplos para enseñar patrones esperados.
-3. **Structured Output with Tool Use** — obtención de outputs estructurados mediante tool use / schemas.
-4. **Validation, Retry, and Feedback Loops** — validación determinística, reintentos y feedback.
-5. **Batch Processing Strategies** — elección de estrategias batch según costo, latencia y volumen.
-6. **Multi-Instance and Multi-Pass Review** — revisión mediante múltiples instancias o múltiples pasadas.
+Incluye explicit criteria, few-shot prompting, structured output mediante tool use, validation/retry loops, batch strategies y multi-pass/multi-instance review.
 
 ### Domain 5 — Context Management & Reliability — 15%
 
-1. **Context Window Management** — administración eficiente de la context window.
-2. **Escalation & Ambiguity Resolution** — manejo de ambigüedad y criterios de escalamiento.
-3. **Error Propagation in Multi-Agent Systems** — prevención de propagación de errores entre agentes.
-4. **Codebase Exploration & Context Degradation** — exploración de codebases y degradación de contexto en tareas largas.
-5. **Human Review & Confidence Calibration** — human-in-the-loop y decisiones basadas en riesgo/confianza.
-6. **Information Provenance & Multi-Source Synthesis** — trazabilidad de fuentes y síntesis confiable de múltiples fuentes.
+Incluye context window management, escalation/ambiguity, error propagation, codebase exploration/context degradation, human review/confidence calibration e information provenance.
+
+> El detalle completo de los task statements y el recorrido está en [ROADMAP.md](ROADMAP.md).
 
 ---
 
-# Preparación oficial recomendada por Anthropic
+# Official preparation path
 
-Anthropic no exige completar cursos como requisito formal para presentarse al examen. Sin embargo, la página oficial de CCAR-F indica que los siguientes cursos gratuitos de **Anthropic Academy** cubren los dominios del examen y señala que la mayoría de los candidatos los completa antes de registrarse.
+La página oficial específica de CCAR-F indica actualmente que estos cursos gratuitos de **Anthropic Academy** cubren los dominios del examen y que la mayoría de candidatos los completa en este orden:
 
-Ruta oficial actualmente publicada:
+1. **AI Fluency: Framework & Foundations** — `COMPLETO`
+2. **Claude 101** — `EN ESTUDIO`
+3. **Building with the Claude API** — `PENDIENTE`
+4. **Claude with Amazon Bedrock** — `PENDIENTE`
+5. **Claude on Google Cloud** — `PENDIENTE`
+6. **Introduction to Model Context Protocol** — `PENDIENTE`
+7. **Claude Code in Action** — `PENDIENTE`
 
-1. **AI Fluency: Framework & Foundations** — Level 100
-2. **Claude 101** — Level 100
-3. **Building with the Claude API** — Level 100–200
-4. **Claude with Amazon Bedrock** — Level 100–200
-5. **Claude on Google Cloud** — Level 100–200
-6. **Introduction to Model Context Protocol** — Level 200
-7. **Claude Code in Action** — Level 200
+Los cursos **no son los dominios del examen**. Son una ruta pedagógica oficial que luego complementamos con cobertura exhaustiva del blueprint.
 
-## Regla de este proyecto
+Nuestra ruta completa es:
 
-Que un curso no sea obligatorio **no significa que lo descartemos**.
+```text
+Official courses
+→ labs cuando corresponda
+→ cobertura exhaustiva de task statements
+→ dominio por dominio
+→ mocks
+→ examen
+```
 
-Para cada recurso oficial recomendado evaluaremos:
+---
 
-- qué conocimientos del blueprint cubre;
-- si aporta fundamentos necesarios para entender temas posteriores;
-- si conviene completarlo entero o sólo determinados módulos;
-- qué práctica adicional necesitamos para transformar la teoría en conocimiento aplicable.
+# Metodología — `Official-first`
 
-Por lo tanto, cursos introductorios como **AI Fluency** y **Claude 101** forman parte de nuestra preparación cuando aportan las bases necesarias, aunque sus nombres no sean task statements del examen.
+Por defecto seguimos este orden:
 
-Los cursos específicos de plataforma, como **Claude with Amazon Bedrock** y **Claude on Google Cloud**, se evaluarán cuando corresponda estudiar model/deployment platform selection. No se omitirán automáticamente ni se harán de forma mecánica: primero determinaremos qué partes son relevantes para CCAR-F.
+1. **Exam Guide / blueprint oficial**.
+2. **Anthropic Academy**.
+3. **Documentación oficial de Anthropic**.
+4. **Hands-on labs** cuando el tema necesita experiencia práctica.
+5. **Fuentes externas** sólo para cubrir gaps concretos o explicar algo significativamente mejor.
+6. **Preguntas y mocks** para practicar razonamiento y detectar debilidades.
+
+No usamos un curso externo completo como backbone de la preparación por defecto.
+
+Además, distinguimos entre:
+
+- cursos de orientación/fundamentos, que pueden requerir sólo resumen, conceptos y comprobación corta;
+- cursos técnicos, que normalmente requieren documentación + labs + preguntas;
+- task statements del examen, que requieren cobertura exhaustiva.
+
+El criterio exacto está documentado en [STUDY_PROTOCOL.md](STUDY_PROTOCOL.md).
+
+---
+
+# AI Fluency — cerrado
+
+**AI Fluency: Framework & Foundations** está `COMPLETO`.
+
+Su aporte a CCAR-F es principalmente conceptual. Anthropic lo incluye oficialmente dentro del path de preparación, pero el **4D Framework** no constituye por sí mismo un dominio ni un task statement del blueprint.
+
+Conceptos conservados:
+
+- **Delegation**;
+- **Description**;
+- **Discernment**;
+- **Diligence**;
+- **Automation**;
+- **Augmentation**;
+- **Agency**.
+
+Clasificación del proyecto:
+
+- **valor directo para el examen:** bajo;
+- **valor conceptual:** moderado;
+- **lab adicional:** no requerido;
+- **recomendación:** comprenderlo y conservarlo, sin sobreestudiarlo.
+
+Material completo: [CCAR-F/00-preparacion/01-ai-fluency/README.md](CCAR-F/00-preparacion/01-ai-fluency/README.md).
 
 ---
 
 # Fuente de verdad
 
-El **Exam Guide oficial de Anthropic** define el alcance del examen. Los cursos, documentación, repositorios, artículos y mocks son material de preparación y deben evaluarse contra ese blueprint.
+La página específica de **Claude Certified Architect – Foundations** y el **Exam Guide oficial de Anthropic** definen el alcance del examen.
 
-Prioridad general:
-
-1. **Anthropic Exam Guide / Certification page**
-2. **Anthropic Documentation / Anthropic Academy**
-3. **Especificaciones oficiales relacionadas**, por ejemplo MCP
-4. Recursos externos de alta calidad
-5. Mocks y material comunitario
+Los cursos, documentación, repositorios, artículos y mocks son material de preparación y deben evaluarse contra ese blueprint.
 
 Una fuente comunitaria nunca reemplaza al blueprint oficial.
 
@@ -172,18 +191,22 @@ Una fuente comunitaria nunca reemplaza al blueprint oficial.
 - [Claude Certified Architect – Foundations — Anthropic Academy](https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification)
 - [Anthropic Certification FAQ](https://anthropic-partners.skilljar.com/page/faq-certifications)
 - [Claude Certification Exam Prep Courses](https://anthropic-partners.skilljar.com/page/claude-certification-exam-prep-courses)
+- [AI Fluency — Anthropic](https://www.anthropic.com/ai-fluency)
 
 ---
 
 # Documentos del repositorio
 
-- [STUDY_PROTOCOL.md](STUDY_PROTOCOL.md) — metodología y criterio de finalización de cada tema.
-- [ROADMAP.md](ROADMAP.md) — roadmap completo del CCAR-F.
-- [PROGRESS.md](PROGRESS.md) — progreso actual.
-- [DIVERGENCES.md](DIVERGENCES.md) — inconsistencias o cambios detectados entre fuentes.
+- [ROADMAP.md](ROADMAP.md) — official path, blueprint y recorrido completo.
+- [PROGRESS.md](PROGRESS.md) — progreso actual y próximo paso.
+- [STUDY_PROTOCOL.md](STUDY_PROTOCOL.md) — metodología y criterio de cierre según el tipo de bloque.
+- [DIVERGENCES.md](DIVERGENCES.md) — cambios, inconsistencias y decisiones pedagógicas relevantes.
 
-## Estado
+## Estado actual
 
 **Certificación actual:** CCAR-F  
-**Tema actual:** AI Fluency: Framework & Foundations  
-**Regla:** se trabaja un tema a la vez; no se avanza hasta cerrar teoría, fuentes, práctica, preguntas y documentación.
+**Último curso cerrado:** AI Fluency: Framework & Foundations  
+**Tema actual:** Claude 101  
+**Estado:** `EN ESTUDIO`
+
+No se desarrolla todavía contenido profundo de Claude 101: el siguiente paso es estudiarlo y cerrarlo aplicando el protocolo correspondiente.

@@ -6,15 +6,39 @@ Este roadmap separa explícitamente **recursos de preparación** de **dominios e
 
 La página oficial específica de **Claude Certified Architect – Foundations (CCAR-F)** indica actualmente que los siguientes cursos gratuitos de Anthropic Academy cubren los dominios del examen y que la mayoría de candidatos los completa en este orden:
 
-1. **AI Fluency: Framework & Foundations** — Level 100 — `COMPLETO`
-2. **Claude 101** — Level 100 — `EN ESTUDIO`
-3. **Building with the Claude API** — Level 100–200 — `PENDIENTE`
-4. **Claude with Amazon Bedrock** — Level 100–200 — `PENDIENTE`
-5. **Claude on Google Cloud** — Level 100–200 — `PENDIENTE`
-6. **Introduction to Model Context Protocol** — Level 200 — `PENDIENTE`
-7. **Claude Code in Action** — Level 200 — `PENDIENTE`
+1. ✅ **AI Fluency: Framework & Foundations** — Level 100 — `COMPLETO`
+2. ✅ **Claude 101** — Level 100 — `COMPLETO`
+3. ➡️ **Building with the Claude API** — Level 100–200 — `SIGUIENTE / NEXT`
+4. ⬜ **Claude with Amazon Bedrock** — Level 100–200 — `PENDIENTE`
+5. ⬜ **Claude on Google Cloud** — Level 100–200 — `PENDIENTE`
+6. ⬜ **Introduction to Model Context Protocol** — Level 200 — `PENDIENTE`
+7. ⬜ **Claude Code in Action** — Level 200 — `PENDIENTE`
 
 Estos cursos **no sustituyen los task statements oficiales** y tampoco son prerequisitos formales para rendir el examen.
+
+### Orientation / Foundations Stage
+
+Los dos primeros cursos forman nuestra etapa introductoria:
+
+1. `AI Fluency: Framework & Foundations`
+2. `Claude 101`
+
+Objetivo de esta etapa:
+
+- construir un framework general de colaboración responsable con AI;
+- entender el mapa básico del ecosistema Claude;
+- reconocer terminología y superficies principales;
+- evitar entrar prematuramente en detalles técnicos.
+
+**Estado:** `COMPLETA`.
+
+### Technical Foundations Stage
+
+Comienza con:
+
+➡️ **Building with the Claude API**
+
+A partir de aquí aumenta la exigencia práctica. Los cursos técnicos se complementarán con documentación oficial, hands-on labs, preguntas y revisión de gaps antes de avanzar.
 
 ### Regla del proyecto
 

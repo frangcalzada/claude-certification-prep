@@ -105,13 +105,13 @@ Incluye context window management, escalation/ambiguity, error propagation, code
 
 La página oficial específica de CCAR-F indica actualmente que estos cursos gratuitos de **Anthropic Academy** cubren los dominios del examen y que la mayoría de candidatos los completa en este orden:
 
-1. **AI Fluency: Framework & Foundations** — `COMPLETO`
-2. **Claude 101** — `EN ESTUDIO`
-3. **Building with the Claude API** — `PENDIENTE`
-4. **Claude with Amazon Bedrock** — `PENDIENTE`
-5. **Claude on Google Cloud** — `PENDIENTE`
-6. **Introduction to Model Context Protocol** — `PENDIENTE`
-7. **Claude Code in Action** — `PENDIENTE`
+1. ✅ **AI Fluency: Framework & Foundations** — `COMPLETO`
+2. ✅ **Claude 101** — `COMPLETO`
+3. ➡️ **Building with the Claude API** — `SIGUIENTE / NEXT`
+4. ⬜ **Claude with Amazon Bedrock** — `PENDIENTE`
+5. ⬜ **Claude on Google Cloud** — `PENDIENTE`
+6. ⬜ **Introduction to Model Context Protocol** — `PENDIENTE`
+7. ⬜ **Claude Code in Action** — `PENDIENTE`
 
 Los cursos **no son los dominios del examen**. Son una ruta pedagógica oficial que luego complementamos con cobertura exhaustiva del blueprint.
 
@@ -125,6 +125,23 @@ Official courses
 → mocks
 → examen
 ```
+
+## Etapas pedagógicas
+
+### Orientation / Foundations Stage — `COMPLETA`
+
+1. AI Fluency: Framework & Foundations
+2. Claude 101
+
+Objetivo: comprender principios generales de colaboración con AI y construir un mapa mental del ecosistema Claude antes de entrar en contenido técnico.
+
+### Technical Foundations Stage — `SIGUIENTE`
+
+Comienza con:
+
+**Building with the Claude API**
+
+A partir de este punto se espera mayor profundidad práctica mediante documentación oficial, hands-on labs, preguntas y revisión de gaps.
 
 ---
 
@@ -178,6 +195,46 @@ Material completo: [CCAR-F/00-preparacion/01-ai-fluency/README.md](CCAR-F/00-pre
 
 ---
 
+# Claude 101 — cerrado
+
+**Claude 101** está `COMPLETO`.
+
+El curso introduce cómo trabajar con Claude y crea un mapa conceptual de sus principales superficies y capacidades antes de comenzar el contenido técnico.
+
+Conceptos conservados:
+
+- `Claude`;
+- `Projects`;
+- `Artifacts`;
+- `Skills`;
+- `Connectors`;
+- `Enterprise Search`;
+- `Research`;
+- `Claude API`;
+- `Claude Code`;
+- `MCP`.
+
+Puntos importantes:
+
+- `Projects` organizan chats, knowledge e instrucciones alrededor de un objetivo, pero un chat no comparte automáticamente toda su historia con otros chats del mismo Project;
+- `Artifacts` permiten trabajar con outputs sustanciales como objetos separados del flujo principal de conversación;
+- `Skills` encapsulan comportamientos/procedimientos reutilizables;
+- `Connectors` permiten integrar Claude con apps, datos y acciones autorizadas;
+- `Connector` y `MCP` **no son sinónimos**;
+- `Research` ayuda a buscar, analizar y sintetizar información, pero no reemplaza la verificación ni `Discernment`;
+- no conviene memorizar detalles efímeros de UI para CCAR-F.
+
+Clasificación del proyecto:
+
+- **valor técnico directo:** bajo/moderado;
+- **valor de orientación sobre el ecosistema:** alto;
+- **lab técnico adicional:** no requerido;
+- **recomendación:** completarlo una vez antes de comenzar los cursos técnicos.
+
+Material completo: [CCAR-F/00-preparacion/02-claude-101/README.md](CCAR-F/00-preparacion/02-claude-101/README.md).
+
+---
+
 # Fuente de verdad
 
 La página específica de **Claude Certified Architect – Foundations** y el **Exam Guide oficial de Anthropic** definen el alcance del examen.
@@ -192,6 +249,7 @@ Una fuente comunitaria nunca reemplaza al blueprint oficial.
 - [Anthropic Certification FAQ](https://anthropic-partners.skilljar.com/page/faq-certifications)
 - [Claude Certification Exam Prep Courses](https://anthropic-partners.skilljar.com/page/claude-certification-exam-prep-courses)
 - [AI Fluency — Anthropic](https://www.anthropic.com/ai-fluency)
+- [Claude 101 — Anthropic Academy](https://anthropic-partners.skilljar.com/claude-101)
 
 ---
 
@@ -205,8 +263,7 @@ Una fuente comunitaria nunca reemplaza al blueprint oficial.
 ## Estado actual
 
 **Certificación actual:** CCAR-F  
-**Último curso cerrado:** AI Fluency: Framework & Foundations  
-**Tema actual:** Claude 101  
-**Estado:** `EN ESTUDIO`
-
-No se desarrolla todavía contenido profundo de Claude 101: el siguiente paso es estudiarlo y cerrarlo aplicando el protocolo correspondiente.
+**Últimos cursos cerrados:** AI Fluency + Claude 101  
+**Orientation / Foundations Stage:** `COMPLETA`  
+**Siguiente curso:** Building with the Claude API  
+**Siguiente etapa:** Technical Foundations

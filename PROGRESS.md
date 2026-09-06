@@ -8,14 +8,22 @@
 
 ## Checklist global
 
-### Base recomendada
+### Official preparation path
 
-- [ ] AI Fluency: Framework & Foundations — `EN ESTUDIO`
-- [ ] Claude 101 — `PENDIENTE`
+- [x] AI Fluency: Framework & Foundations — `COMPLETO`
+  - Curso oficial recomendado por Anthropic para CCAR-F.
+  - Valor técnico directo para el examen: **bajo**.
+  - Valor conceptual: **moderado**.
+  - Lab adicional: **no requerido**.
+  - Material consolidado en `CCAR-F/00-preparacion/01-ai-fluency/README.md`.
+- [ ] Claude 101 — `EN ESTUDIO`
 - [ ] Building with the Claude API — `PENDIENTE`
-- [ ] Introduction to Model Context Protocol (MCP) — `PENDIENTE`
+- [ ] Claude with Amazon Bedrock — `PENDIENTE`
+- [ ] Claude on Google Cloud — `PENDIENTE`
+- [ ] Introduction to Model Context Protocol — `PENDIENTE`
 - [ ] Claude Code in Action — `PENDIENTE`
-- [ ] AI Capabilities and Limitations — `PENDIENTE`
+
+> `AI Capabilities and Limitations` puede utilizarse como complemento oficial si resuelve un gap concreto, pero no forma parte de la lista base publicada específicamente para CCAR-F.
 
 ### Dominios CCAR-F
 
@@ -27,19 +35,37 @@
 
 ### Consolidación
 
-- [ ] Revisión integral
+- [ ] Cobertura exhaustiva de todos los task statements
+- [ ] Revisión integral por dominio
+- [ ] Preguntas mixtas
 - [ ] Mocks por dominio
 - [ ] Mocks completos
 - [ ] Error log revisado
 - [ ] Simulación final
 
+## Tema cerrado
+
+### AI Fluency: Framework & Foundations
+
+Estado: `COMPLETO`
+
+Evaluación del curso:
+
+- `oficial`: sí;
+- `completado`: sí;
+- `valor técnico directo para CCAR-F`: bajo;
+- `valor como framework conceptual`: moderado;
+- `lab adicional`: no requerido;
+- `sobreestudiar`: no recomendado.
+
+Quedaron documentados **Delegation, Description, Discernment y Diligence**, junto con `Automation`, `Augmentation`, `Agency`, los loops principales y su relación indirecta con decisiones reales de CCAR-F.
+
 ## Tema actual
 
-**AI Fluency: Framework & Foundations**  
+### Claude 101
+
 Estado: `EN ESTUDIO`
 
-### Próximo paso del estudiante
+Todavía no se desarrolla contenido profundo de este curso en el repositorio. El siguiente paso es completar/estudiar el curso oficial y luego aplicar el protocolo correspondiente a un curso de fundamentos.
 
-Completar el curso oficial `AI Fluency: Framework & Foundations` de Anthropic antes de realizar la práctica y las preguntas de cierre del tema.
-
-No se comienza el siguiente tema hasta que éste cumpla el criterio definido en `STUDY_PROTOCOL.md`.
+No se comienza ningún curso posterior hasta cerrar este bloque con el criterio definido en `STUDY_PROTOCOL.md`.

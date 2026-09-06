@@ -43,9 +43,22 @@ No todos los cursos preparatorios requieren el mismo nivel de práctica ni la mi
 
 ### A. Cursos de orientación / fundamentos
 
-Ejemplo:
+Ejemplos:
 
-- **AI Fluency: Framework & Foundations**
+- **AI Fluency: Framework & Foundations**;
+- **Claude 101**.
+
+Flujo:
+
+```text
+Curso oficial
+→ resumen
+→ conceptos clave
+→ comprobación conceptual
+→ relación real con CCAR-F
+→ GitHub
+→ COMPLETO
+```
 
 Pueden cerrarse con:
 
@@ -58,7 +71,9 @@ Pueden cerrarse con:
 
 No se crea un laboratorio técnico artificial sólo para cumplir una plantilla.
 
-### B. Cursos técnicos
+La etapa formada por `AI Fluency` + `Claude 101` se denomina en este repositorio **Orientation / Foundations Stage**.
+
+### B. Cursos técnicos / Technical Foundations
 
 Ejemplos:
 
@@ -68,12 +83,14 @@ Ejemplos:
 - **Introduction to Model Context Protocol**;
 - **Claude Code in Action**.
 
+Con `Building with the Claude API` comienza nuestra **Technical Foundations Stage**.
+
 Cuando el contenido necesita experiencia práctica, el flujo recomendado es:
 
 ```text
 Curso oficial
-→ complementar con documentación
-→ uno o varios labs
+→ complementar con documentación oficial
+→ uno o varios hands-on labs
 → preguntas
 → detectar gaps
 → corregir
@@ -82,6 +99,8 @@ Curso oficial
 ```
 
 La cantidad y dificultad de labs y preguntas debe ser proporcional a la relevancia técnica del tema.
+
+Completar el video/curso **no es suficiente** para marcar un curso técnico como `COMPLETO` si todavía faltan experiencia práctica, conceptos relevantes o gaps detectados.
 
 ### C. Task Statements / dominios reales del examen
 
@@ -199,6 +218,7 @@ Sólo entonces el bloque pasa a **COMPLETO**.
 ## Estados
 
 - `PENDIENTE`
+- `SIGUIENTE / NEXT`
 - `EN ESTUDIO`
 - `PRACTICA PENDIENTE`
 - `PREGUNTAS PENDIENTES`

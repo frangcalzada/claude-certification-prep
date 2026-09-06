@@ -11,6 +11,59 @@ Este archivo registra discrepancias, cambios de versión, ambigüedades y decisi
 
 ## Registro
 
+### 2026-09-06 — Claude 101: curriculum y alcance revalidados
+
+**Hallazgo:** se verificó el curriculum actual de `Claude 101 — Anthropic Academy` y su posición dentro del preparation path específico de **Claude Certified Architect – Foundations**.
+
+Anthropic mantiene `Claude 101` como segundo curso del path, inmediatamente después de `AI Fluency: Framework & Foundations` y antes de `Building with the Claude API`.
+
+El curriculum actual agrupa algunas lecciones bajo encabezados como:
+
+- `Organizing your work and knowledge`;
+- `Expanding Claude's reach`;
+- `Putting it all together`;
+- `Conclusion & certificate`.
+
+**Decisión:** documentar los conceptos y lecciones actuales sin convertir la estructura exacta de navegación del curso en conocimiento a memorizar.
+
+**Evaluación para este proyecto:**
+
+- curso oficial: sí;
+- recomendado oficialmente para CCAR-F: sí;
+- tipo: orientación/fundamentos;
+- valor directo para task statements: bajo/moderado;
+- valor como mapa del ecosistema Claude: alto;
+- lab técnico artificial: no requerido.
+
+**Impacto:** con `Claude 101` completo queda cerrada nuestra **Orientation / Foundations Stage**. El siguiente curso es `Building with the Claude API`, que inicia la **Technical Foundations Stage**.
+
+---
+
+### 2026-09-06 — Projects: mismo Project no implica historia de chat compartida
+
+**Hallazgo:** la documentación oficial actual de Claude aclara que `Projects` proporcionan un workspace con **project knowledge** e instrucciones, pero el contexto conversacional de un chat no se comparte automáticamente con los demás chats del mismo Project.
+
+La información que debe reutilizarse entre chats tiene que formar parte del **project knowledge** o de las **project instructions**.
+
+**Decisión:** evitar frases que puedan interpretarse como “todos los chats de un Project comparten automáticamente todo su contexto”.
+
+**Impacto:** para CCAR-F conservamos la distinción entre organización persistente del workspace y contexto conversacional específico de cada chat.
+
+---
+
+### 2026-09-06 — Connector vs MCP
+
+**Hallazgo:** la documentación actual de Claude utiliza `Connectors` como capacidad de producto para conectar Claude con apps, servicios, datos y acciones autorizadas. También permite custom connectors hacia servicios compatibles con MCP.
+
+**Decisión:** `Connector` y `MCP` no se documentan como sinónimos.
+
+- `Connector`: integración/capacidad visible desde la experiencia de producto.
+- `MCP`: protocolo abierto y arquitectura técnica para conectar AI systems con tools y data sources.
+
+**Impacto:** Claude 101 conserva sólo la diferencia conceptual. La arquitectura técnica de MCP se estudiará posteriormente en su curso específico.
+
+---
+
 ### 2026-09-06 — Revalidación de información oficial CCAR-F
 
 **Hallazgo:** se volvió a contrastar el material del repositorio con la información oficial vigente de Anthropic Academy para **Claude Certified Architect – Foundations (CCAR-F)**.

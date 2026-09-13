@@ -107,7 +107,7 @@ La página oficial específica de CCAR-F indica actualmente que estos cursos gra
 
 1. ✅ **AI Fluency: Framework & Foundations** — `COMPLETO`
 2. ✅ **Claude 101** — `COMPLETO`
-3. ➡️ **Building with the Claude API** — `SIGUIENTE / NEXT`
+3. 🟡 **Building with the Claude API** — `EN ESTUDIO`
 4. ⬜ **Claude with Amazon Bedrock** — `PENDIENTE`
 5. ⬜ **Claude on Google Cloud** — `PENDIENTE`
 6. ⬜ **Introduction to Model Context Protocol** — `PENDIENTE`
@@ -135,11 +135,13 @@ Official courses
 
 Objetivo: comprender principios generales de colaboración con AI y construir un mapa mental del ecosistema Claude antes de entrar en contenido técnico.
 
-### Technical Foundations Stage — `SIGUIENTE`
+### Technical Foundations Stage — `EN CURSO`
 
-Comienza con:
+Curso actual:
 
-**Building with the Claude API**
+**Building with the Claude API** — `EN ESTUDIO`
+
+Checkpoint 2026-09-13: último contenido completado **Prompt Evaluation**; siguiente contenido **A typical eval workflow**.
 
 A partir de este punto se espera mayor profundidad práctica mediante documentación oficial, hands-on labs, preguntas y revisión de gaps.
 
@@ -235,6 +237,20 @@ Material completo: [CCAR-F/00-preparacion/02-claude-101/README.md](CCAR-F/00-pre
 
 ---
 
+# Building with the Claude API — en estudio
+
+El curso técnico **Building with the Claude API** está `EN ESTUDIO`.
+
+**Checkpoint:** 2026-09-13  
+**Último contenido completado:** Prompt Evaluation  
+**Siguiente contenido:** A typical eval workflow
+
+El material documenta únicamente lo estudiado hasta este punto. Todavía no se completó el bloque Prompt evaluation ni se crearon labs o preguntas finales.
+
+Material parcial: [CCAR-F/00-preparacion/03-building-with-claude-api/README.md](CCAR-F/00-preparacion/03-building-with-claude-api/README.md).
+
+---
+
 # Fuente de verdad
 
 La página específica de **Claude Certified Architect – Foundations** y el **Exam Guide oficial de Anthropic** definen el alcance del examen.
@@ -263,7 +279,7 @@ Una fuente comunitaria nunca reemplaza al blueprint oficial.
 ## Estado actual
 
 **Certificación actual:** CCAR-F  
-**Últimos cursos cerrados:** AI Fluency + Claude 101  
+**Cursos cerrados:** AI Fluency + Claude 101  
 **Orientation / Foundations Stage:** `COMPLETA`  
-**Siguiente curso:** Building with the Claude API  
-**Siguiente etapa:** Technical Foundations
+**Curso actual:** Building with the Claude API — `EN ESTUDIO`  
+**Checkpoint:** Prompt Evaluation completado; sigue **A typical eval workflow**

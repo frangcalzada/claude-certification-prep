@@ -8,7 +8,7 @@ La página oficial específica de **Claude Certified Architect – Foundations (
 
 1. ✅ **AI Fluency: Framework & Foundations** — Level 100 — `COMPLETO`
 2. ✅ **Claude 101** — Level 100 — `COMPLETO`
-3. ➡️ **Building with the Claude API** — Level 100–200 — `SIGUIENTE / NEXT`
+3. 🟡 **Building with the Claude API** — Level 100–200 — `EN ESTUDIO`
 4. ⬜ **Claude with Amazon Bedrock** — Level 100–200 — `PENDIENTE`
 5. ⬜ **Claude on Google Cloud** — Level 100–200 — `PENDIENTE`
 6. ⬜ **Introduction to Model Context Protocol** — Level 200 — `PENDIENTE`
@@ -34,9 +34,11 @@ Objetivo de esta etapa:
 
 ### Technical Foundations Stage
 
-Comienza con:
+Curso actual:
 
-➡️ **Building with the Claude API**
+🟡 **Building with the Claude API** — `EN ESTUDIO`
+
+Checkpoint 2026-09-13: último contenido completado **Prompt Evaluation**; siguiente contenido **A typical eval workflow**.
 
 A partir de aquí aumenta la exigencia práctica. Los cursos técnicos se complementarán con documentación oficial, hands-on labs, preguntas y revisión de gaps antes de avanzar.
 

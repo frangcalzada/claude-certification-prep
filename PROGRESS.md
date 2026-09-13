@@ -4,7 +4,10 @@
 
 **Ruta actual:** CCAR-F  
 **Metodología:** un tema a la vez  
-**Estado:** **Etapa introductoria completada. Próxima etapa: Technical Foundations / Building with the Claude API.**
+**Estado:** **Technical Foundations en curso / Building with the Claude API — EN ESTUDIO.**  
+**Checkpoint:** 2026-09-13  
+**Último contenido completado:** Prompt Evaluation  
+**Siguiente contenido:** A typical eval workflow
 
 ## Checklist global
 
@@ -23,7 +26,12 @@
   - Valor para comprender el ecosistema Claude: **alto**.
   - Lab técnico adicional: **no requerido**.
   - Material consolidado en `CCAR-F/00-preparacion/02-claude-101/README.md`.
-- [ ] Building with the Claude API — `SIGUIENTE / NEXT`
+- [ ] Building with the Claude API — `EN ESTUDIO`
+  - Checkpoint: **2026-09-13**.
+  - Avance actual: comienzo del bloque **Prompt Evaluation**.
+  - Último contenido completado: **Prompt Evaluation**.
+  - Siguiente contenido: **A typical eval workflow**.
+  - Material parcial en `CCAR-F/00-preparacion/03-building-with-claude-api/README.md`.
 - [ ] Claude with Amazon Bedrock — `PENDIENTE`
 - [ ] Claude on Google Cloud — `PENDIENTE`
 - [ ] Introduction to Model Context Protocol — `PENDIENTE`
@@ -40,11 +48,11 @@
 
 ### Technical Foundations Stage
 
-- [ ] Building with the Claude API — `SIGUIENTE / NEXT`
-- [ ] Claude with Amazon Bedrock
-- [ ] Claude on Google Cloud
-- [ ] Introduction to Model Context Protocol
-- [ ] Claude Code in Action
+- [ ] Building with the Claude API — `EN ESTUDIO`
+- [ ] Claude with Amazon Bedrock — `PENDIENTE`
+- [ ] Claude on Google Cloud — `PENDIENTE`
+- [ ] Introduction to Model Context Protocol — `PENDIENTE`
+- [ ] Claude Code in Action — `PENDIENTE`
 
 ### Dominios CCAR-F
 
@@ -53,6 +61,8 @@
 - [ ] Claude Code Configuration & Workflows — 20%
 - [ ] Prompt Engineering & Structured Output — 20%
 - [ ] Context Management & Reliability — 15%
+
+> El avance en un curso aporta conocimientos relacionados con el blueprint, pero no completa automáticamente ningún dominio CCAR-F.
 
 ### Consolidación
 
@@ -102,14 +112,20 @@ Quedaron documentados y diferenciados `Claude`, `Projects`, `Artifacts`, `Skills
 
 ---
 
-## Siguiente bloque
+## Curso actual
 
 ### Building with the Claude API
 
-Estado: `SIGUIENTE / NEXT`
+Estado: `EN ESTUDIO`
 
-Con este curso comienza nuestra **Technical Foundations Stage**.
+Con este curso comenzó nuestra **Technical Foundations Stage**.
 
-A diferencia de los dos cursos introductorios, este bloque se evaluará como curso técnico y deberá combinar el curso oficial con documentación técnica, hands-on labs, preguntas y revisión de gaps antes de considerarse completo.
+Checkpoint registrado el **2026-09-13**:
 
-No se marca como iniciado ningún curso posterior hasta cerrar este bloque según `STUDY_PROTOCOL.md`.
+- completados **Introduction** y **Anthropic overview**;
+- completado **Accessing Claude with the API**, incluidos sus ejercicios y quiz;
+- completada únicamente la introducción **Prompt Evaluation** del bloque homónimo;
+- todavía no se completó el resto del bloque **Prompt evaluation**;
+- próximo contenido: **A typical eval workflow**.
+
+Los hands-on labs finales, preguntas finales y mocks del curso se incorporarán más adelante, cuando exista suficiente contenido técnico completado. Ningún curso posterior se marca como iniciado.
